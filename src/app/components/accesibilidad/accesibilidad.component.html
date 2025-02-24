@@ -1,0 +1,63 @@
+<!-- 2.1. Mejora de accesibilidad en un componente HTML
+
+Dado el siguiente código de un componente de navegación, identifica y corrige los problemas de accesibilidad:
+<div class="navigation">
+    <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="about.html"></a></li>
+        <li><a href="contact.html"></a></li>
+    </ul>
+</div> -->
+
+<nav class="navigation">
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre Nosotros</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- TODO: Se cambia la etiqueta de div por el de nav, de navigation, para referirse a la etqiueta de navegación.
+Para que a la hora de pasar los programas de accesibilidad, estos puedan identificar que la función de este trozo de código es de navegación. -->
+______________________________________________________________________________________________________
+
+<!-- 2.2. Mejora de accesibilidad en formularios
+
+Dado el siguiente formulario básico:
+<form>
+    <input type="email" placeholder="Correo Electrónico">
+    <button>Suscribirse</button>
+</form>
+
+Tareas:
+1. Asegúrate de que sea accesible añadiendo etiquetas y atributos necesarios.
+2. Explica brevemente por qué las modificaciones mejoran la accesibilidad. -->
+<form class="form">
+    <label for="email" class="form_label_email"></label>
+    <input type="email" id= "email" placeholder="Correo Electrónico" class="form_input_email">
+    <button type="submit" class="form_button_email">Suscribirse</button>
+</form>
+<!-- TODO: Explicación del apartado 2.2 Mejora de la Accesibilidad.
+* Para que a la hora de pasar los programas de accesibilidad, a la etiqueta de formulario se le ha puesto una clase. 
+* Se ha añadido la eqtiqueta <label> para porporcionar la información que a continuación se le va a solicitar en el input.
+* En el input se le ha puesto de que tipo es para facilitar la lectura que información se le va a requirir rellenar y la clase.
+* Se añade en el botón el tipo "Submit" para indicar que este botón en el formulario tiene la finción de enviar.
+-->
+______________________________________________________________________________________________________
+
+<!-- 2.3. (Bonus) Elementos dinámicos y accesibles
+
+¿Cómo garantizamos que un menú desplegable dinámico es accesible para usuarios de teclado y lectores de pantalla? Da una breve descripción o un ejemplo. -->
+<button aria.haspopup="true" aria.expanded="false">Menú</button>
+<ul role="menu" hidden>
+    <li role="menuitem">Opción 1</li>
+    <li role="menuitem">Opción 2</li>
+</ul>
+
+<!-- TODO: Explicación del apartado 2.3. (Bonus) Elementos dinámicos y accesibles.
+* Creó que por lo que estoy viendo en la imagen tiene que ver con poner "aria" pero la verdad que no sé nada más con respecto a esto.
+* Lo siento.
+* Em los proyectos que he estado no se tenía muy encuenta eso de la accesibilidad para todo el mundo
+-->
+______________________________________________________________________________________________________
+

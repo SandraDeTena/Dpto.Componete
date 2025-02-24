@@ -1,0 +1,44 @@
+/* card 
+* ● Un fondo gris claro para la tarjeta.
+* ● Un borde redondeado y padding.
+* ● Una variante en el botón con la clase card button primary, que tenga un color azul y cambie a un azul más oscuro al pasar el ratón.
+*/
+.card{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 500px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+.card_header{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(254, 10, 144);
+    margin-bottom: 10px;
+}
+
+.card_image{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.card_description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #666;
+}
+.card_button {
+    background-color: #007BFF;
+    color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.32em;
+}
+.card_button--primary:hover{
+    background-color: #0056b3;
+}
+

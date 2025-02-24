@@ -1,0 +1,4 @@
+<h1>Desarrollo de Componente Angular</h1>
+<select (change)="onSelectionChange($event)" class="dropdown">
+  <option *ngFor="let option of opcions" [value]="option">{{option}}</option>
+</select>

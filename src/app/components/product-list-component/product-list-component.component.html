@@ -1,0 +1,24 @@
+<h2>Listado de Productos</h2>
+    <div>
+      <label>Filtrar por precio (mayor a): </label>
+      <input type="number" [formControl]="filterControl" placeholder="Ingrese precio">
+    </div>
+    <table border="1" cellpadding="5" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of filteredProducts$ | async">
+          <td>{{ product.name }}</td>
+          <td>{{ product.price | currency }}</td>
+          <td>
+            <button (click)="editProduct(product)">Editar</button>
+            <button (click)="deleteProduct(product)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>

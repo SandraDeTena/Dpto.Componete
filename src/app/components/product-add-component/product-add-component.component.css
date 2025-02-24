@@ -1,0 +1,78 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+  }
+  
+  /* Estilo para los encabezados */
+  h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+  form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  form input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  form button {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:disabled {
+    background: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  form button:hover:not(:disabled) {
+    background: #2980b9;
+  }
+
+  /* Bordes rojos de los input al estar vacíos */
+  input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+
+  /* Color del mensaje */
+  .error-message {
+    color: red;
+  }
+  

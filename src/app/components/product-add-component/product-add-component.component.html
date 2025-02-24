@@ -1,0 +1,19 @@
+<h2>Añadir Producto</h2>
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">  
+  <div>
+    <label>Nombre*:</label>
+    <input formControlName="name">
+    <div *ngIf="productForm.get('name')?.invalid && productForm.get('name')?.touched" class="error-message">
+      El nombre es obligatorio.
+    </div>
+  </div>
+  <div>
+    <label>Precio*:</label>
+    <input type="number" formControlName="price">
+    <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched" class="error-message">
+      El precio debe ser un número positivo.
+    </div>
+  </div>
+  <button type="submit" [disabled]="productForm.invalid">Añadir</button>
+</form>
+

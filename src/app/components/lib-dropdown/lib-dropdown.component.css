@@ -1,0 +1,36 @@
+/* Estilos generales para el dropdown */
+.dropdown {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid #ff7f50;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Efecto de hover para el dropdown */
+  .dropdown:hover {
+    background-color: #ff7f50;
+    color: white;
+  }
+  
+  /* Efecto de focus para el dropdown */
+  .dropdown:focus {
+    outline: none; 
+    border-color: #e67300;
+  }
+  
+  /* Estilo especial para indicar la identidad del componente */
+  .dropdown::after {
+    content: "Dropdown de Sandra";
+    display: block;
+    font-size: 12px;
+    color: #ff7f50;
+    margin-top: 10px;
+    text-align: right;
+    opacity: 0.7;
+  }
+  

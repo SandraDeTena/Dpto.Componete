@@ -1,0 +1,76 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilos para la parte de 2.1 Accesibilidad de un componente HTML*/
+.navigation {
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.navigation a:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la parte del formulario 2.2 Mejora de la accesibilidad en formularios */
+.form {
+    background-color: #28a7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 500px;
+}
+.form_label_email {
+    color: #fff;
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.form_input_email {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.form_button_email {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width:100% ;
+}
+.form_button_email:hover {
+    background-color: #e0a800;
+}
+
+/* Estilos para el menú */
+.menu {
+    background-color: #17a2b8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+.menuitem {
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
